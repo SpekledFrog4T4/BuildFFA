@@ -1,0 +1,6 @@
+---
+name: buildffa
+version: 0.0.1
+main: SpekledFrog\buildffa\Main
+api: 3.26.1
+...

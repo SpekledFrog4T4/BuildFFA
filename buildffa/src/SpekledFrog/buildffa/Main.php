@@ -25,12 +25,12 @@ class Main extends PluginBase implements Listener {
 
    public function onPlace(BlockPlaceEvent $event){
    	  $block = $event->getBlock();
-   	if($block->getId() == 24){
+   	if($block->getId() == 24){  //24 is the id of the block
    	   $event->setCancelled();
 
        $world = $block->getLevel();
        $world->setBlock($block, BlockFactory::get(id: 24, meta: 0, pos: null));
-       $this->getScheduler()->scheduleDelayedTask(new BlockTask($this, $block), delay: 20 * 5);
+       $this->getScheduler()->scheduleDelayedTask(new BlockTask($this, $block), delay: 20 * 5);  //5 is the time that the blocks will disappear
 
    	}
 

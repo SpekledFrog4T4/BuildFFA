@@ -23,7 +23,7 @@ class BlockTask extends Task {
   
 
     public function onRun(int $CurrentTick){
-       $this->block->getLevel()->setBlock($this->block, Block::get(0));
+       $this->block->getLevel()->setBlock($this->block, Block::get(0));  //this change the block into air when the timer runs down
 
 
     }
